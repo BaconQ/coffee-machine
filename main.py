@@ -22,11 +22,11 @@ while switch:
         coffee_maker.report()
         money_machine.report()
 
-    elif menu.find_drink(drink) != None:
-
-        if coffee_maker.is_resource_sufficient(menu.menu[menu.drink_order(drink)]) == True:
-            if money_machine.make_payment(menu.drink_order(drink)):
-                    coffee_maker.make_coffee(menu.menu[menu.drink_order(drink)])
+    else:
+        cup = menu.find_drink(drink)
+        if coffee_maker.is_resource_sufficient(cup) and money_machine.make_payment(cup.cost):
+            
+                coffee_maker.make_coffee(cup)
                     
     
 

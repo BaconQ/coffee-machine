@@ -37,16 +37,7 @@ class Menu:
                 return item
         print("Sorry that item is not available.")
 
-    def drink_order(self, order_name):
-        for i in range(len(self.menu)):
-            if self.menu[i].name == order_name:
-                return i
-
-    def drink_cost(self, order_name):
-            for i in range(len(self.menu)):
-                if self.menu[i].name == order_name:
-                    return self.menu[i].cost
-    
+   
     def display(self):
         
         print(r"""
