@@ -20,7 +20,7 @@ class Menu:
             MenuItem(name="latte", water=200, milk=150, coffee=24, cost=2.5),
             MenuItem(name="espresso", water=50, milk=0, coffee=18, cost=1.5),
             MenuItem(name="cappuccino", water=250, milk=50, coffee=24, cost=3),
-            MenuItem(name="Hotchocolte", water=100, milk=200, coffee=0, cost=2)
+            MenuItem(name="hotchocolte", water=100, milk=200, coffee=0, cost=2)
         ]
 
     def get_items(self):

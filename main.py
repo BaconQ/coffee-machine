@@ -20,6 +20,7 @@ while switch:
 
     elif drink == "report":
         coffee_maker.report()
+        money_machine.report()
 
     elif menu.find_drink(drink) != None:
 
